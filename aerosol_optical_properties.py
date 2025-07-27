@@ -22,7 +22,7 @@ def load_and_prepare_data():
     
     # Add latitude and longitude coordinates for each site
     site_coordinates = {
-       'AEAZ': {'Latitude': 24.4539, 'Longitude': 54.3773},
+    'AEAZ': {'Latitude': 24.4539, 'Longitude': 54.3773},
     'AUMN': {'Latitude': -37.81, 'Longitude': 144.96},
     'ARCB': {'Latitude': -34.6036, 'Longitude': -58.3814},  # Converted from 34°36′13″S 58°22′53″W
     'BDDU': {'Latitude': 23.7098, 'Longitude': 90.4070},   # Converted from 23°42'35" N 90°24'25" E
@@ -55,7 +55,8 @@ def load_and_prepare_data():
     'USPA': {'Latitude': 34.1478, 'Longitude': -118.1445},
     'VNHN': {'Latitude': 21.0278, 'Longitude': 105.8342},
     'ZAJB': {'Latitude': -26.11, 'Longitude': 28.058},     # Converted from 26°06′36.00″ S 28°03′28.80″ E
-    'ZAPR': {'Latitude': -25.75, 'Longitude': 28.2167}     # Converted from 25°45' S 28°13' E
+    'ZAPR': {'Latitude': -25.75, 'Longitude': 28.2167},
+    'USNO': {'Latitude': 35.2216, 'Longitude': -97.4446} # 35.2216° N, 97.4446° W
     }
     
     # Add coordinates to dataframe
