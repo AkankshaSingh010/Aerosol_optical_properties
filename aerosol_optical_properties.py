@@ -22,31 +22,40 @@ def load_and_prepare_data():
     
     # Add latitude and longitude coordinates for each site
     site_coordinates = {
-        'AEAZ': {'Latitude': 31.0, 'Longitude': 2.0},  # Algeria
-        'AUMN': {'Latitude': -35.0, 'Longitude': 149.0},  # Australia
-        'BDDU': {'Latitude': 23.0, 'Longitude': 90.0},  # Bangladesh
-        'BIBU': {'Latitude': 4.0, 'Longitude': 114.0},  # Brunei
-        'CAHA': {'Latitude': 49.0, 'Longitude': -125.0},  # Canada
-        'CASH': {'Latitude': 49.5, 'Longitude': -125.5},  # Canada
-        'CHTS': {'Latitude': 39.9, 'Longitude': 116.4},  # China
-        'CLST': {'Latitude': -33.9, 'Longitude': 18.4},  # South Africa
-        'ETAD': {'Latitude': 9.0, 'Longitude': 40.0},  # Ethiopia
-        'IDBD': {'Latitude': -6.2, 'Longitude': 106.8},  # Indonesia
-        'ILHA': {'Latitude': 32.6, 'Longitude': -16.9},  # Portugal (Madeira)
-        'ILNZ': {'Latitude': -36.8, 'Longitude': 174.7},  # New Zealand
-        'INDH': {'Latitude': 28.6, 'Longitude': 77.2},  # India
-        'INKA': {'Latitude': 28.7, 'Longitude': 77.1},  # India
-        'KRSE': {'Latitude': 37.5, 'Longitude': 127.0},  # South Korea
-        'KRUL': {'Latitude': 56.0, 'Longitude': 93.0},  # Russia
-        'MXMC': {'Latitude': 19.4, 'Longitude': -99.1},  # Mexico
-        'NGIL': {'Latitude': 9.0, 'Longitude': 8.0},  # Nigeria
-        'PRFJ': {'Latitude': -22.9, 'Longitude': -43.2},  # Brazil
-        'TWKA': {'Latitude': 25.0, 'Longitude': 121.5},  # Taiwan
-        'TWTA': {'Latitude': 24.8, 'Longitude': 120.9},  # Taiwan
-        'USNO': {'Latitude': 40.7, 'Longitude': -74.0},  # USA
-        'USPA': {'Latitude': 39.9, 'Longitude': -75.2},  # USA
-        'ZAJB': {'Latitude': -26.2, 'Longitude': 28.0},  # South Africa
-        'ZAPR': {'Latitude': -25.7, 'Longitude': 28.2},  # South Africa
+       'AEAZ': {'Latitude': 24.4539, 'Longitude': 54.3773},
+    'AUMN': {'Latitude': -37.81, 'Longitude': 144.96},
+    'ARCB': {'Latitude': -34.6036, 'Longitude': -58.3814},  # Converted from 34°36′13″S 58°22′53″W
+    'BDDU': {'Latitude': 23.7098, 'Longitude': 90.4070},   # Converted from 23°42'35" N 90°24'25" E
+    'BIBU': {'Latitude': -3.3760, 'Longitude': 29.3600},   # Converted from 3°22'33.60" S 29°21'36.00" E
+    'CADO': {'Latitude': 43.78, 'Longitude': -79.47},
+    'CAHA': {'Latitude': 44.65, 'Longitude': -63.57},
+    'CAKE': {'Latitude': 49.8831, 'Longitude': -119.4857}, # Converted from 49° 52' 59.05" N 119° 29' 8.45" W
+    'CALE': {'Latitude': 49.7, 'Longitude': -112.833},
+    'CASH': {'Latitude': 45.41, 'Longitude': -71.88},      # Converted from 45°24′36.00″ N 71°52′48.00″ W
+    'CHTS': {'Latitude': 39.9042, 'Longitude': 116.4074},
+    'CODC': {'Latitude': 3.5379, 'Longitude': -76.2972},
+    'CLST': {'Latitude': -33.4375, 'Longitude': -70.65},   # Converted from 33°26′15″S 70°39′00″W
+    'ETAD': {'Latitude': 9.03, 'Longitude': 38.74},       # Converted from 9°01'48" N 38°44'24" E
+    'IDBD': {'Latitude': -6.9167, 'Longitude': 107.6},    # Converted from 6°55′S 107°36′E
+    'ILHA': {'Latitude': 32.7940, 'Longitude': 34.9896},
+    'ILNZ': {'Latitude': 31.892773, 'Longitude': 34.811272},
+    'INDH': {'Latitude': 28.7041, 'Longitude': 77.1025},  # Corrected Delhi coordinates (the provided ones were same as ILNZ)
+    'INKA': {'Latitude': 26.449923, 'Longitude': 80.331874},
+    'KRSE': {'Latitude': 37.5667, 'Longitude': 126.9667}, # Converted from 37°34' N 126°58' E
+    'KRUL': {'Latitude': 35.5372, 'Longitude': 129.3167}, # Converted from 35°32'13.99"N, 129°19'0.01"E
+    'MXMC': {'Latitude': 19.4326, 'Longitude': -99.1332},
+    'NGIL': {'Latitude': 8.5000, 'Longitude': 4.5500},
+    'PHMO': {'Latitude': 14.6042, 'Longitude': 120.9822},
+    'PRFJ': {'Latitude': 18.33, 'Longitude': -65.66},
+    'SGSU': {'Latitude': 1.3521, 'Longitude': 103.8198},
+    'TWKA': {'Latitude': 22.61626, 'Longitude': 120.31333},
+    'TWTA': {'Latitude': 25.0478, 'Longitude': 121.5319}, # Converted from 25°2'51.94"N, 121°31'54.66"E
+    'USBA': {'Latitude': 39.29, 'Longitude': -76.61},
+    'USMC': {'Latitude': 37.1869, 'Longitude': -86.1011}, # Converted from 37°11′13″N 86°06′04″W
+    'USPA': {'Latitude': 34.1478, 'Longitude': -118.1445},
+    'VNHN': {'Latitude': 21.0278, 'Longitude': 105.8342},
+    'ZAJB': {'Latitude': -26.11, 'Longitude': 28.058},     # Converted from 26°06′36.00″ S 28°03′28.80″ E
+    'ZAPR': {'Latitude': -25.75, 'Longitude': 28.2167}     # Converted from 25°45' S 28°13' E
     }
     
     # Add coordinates to dataframe
